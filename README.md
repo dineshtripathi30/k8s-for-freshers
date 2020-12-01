@@ -1,2 +1,3 @@
-# k8s-for-freshers
-k8s project for freshers 
+# kubernetes-for-freshers
+This will help mainly to the school/college students for learning Kubernetes eaisly. 
+
