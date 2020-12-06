@@ -3,11 +3,15 @@
 By: Dinesh Tripathi  (This project is still under development)
 
 ## Getting Started with cronjob
+### What is cronjob?
+<todo>
 
-
-### Prerequisites
+### Lab Prerequisites
 
 This is an example of how to create cronjob using imperative command.
+*  Minikube cluster is up and running
+  
+### Lab Steps
 * This command will generate a sample cronjob file, Modify it according to your  cronjob requirement
   ```sh
   kubectl create cj counter --image busybox --schedule "*/1 * * * *" --dry-run=client  -o  yaml > cronjob.yml
