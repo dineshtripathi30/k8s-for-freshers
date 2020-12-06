@@ -40,7 +40,7 @@ By: Dinesh Tripathi  (This project is still under development)
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[[Kubernetes for Students](https://example.com)]
+[[Kubernetes for Students]()]
 
 Learning new technologies is really important for  collegge studnets in this world where technology  changes are happening very very fast. This project  is dedicated to  those  studenst  who want to learn by  practise. 
 
@@ -52,7 +52,7 @@ Here's why:
 ### Built With
 
 This section lists the required tools used in this demo  series.
-* [minikube](https://minikube.io)
+* [minikube](https://minikube.sigs.k8s.io/docs/)
 
 
 
