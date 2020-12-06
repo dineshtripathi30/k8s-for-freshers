@@ -16,11 +16,11 @@ This is an example of how to create cronjob using imperative command.
   ```sh
   kubectl create cj counter --image busybox --schedule "*/1 * * * *" --dry-run=client  -o  yaml > cronjob.yml
   ```
-  * Create cronjob
+* Create cronjob
   ```sh
   kubectl create -f cronjob.yml
   ```
-  * cronjob output
+* cronjob output
   ```sh
   kubectl get  cj
   NAME      SCHEDULE      SUSPEND   ACTIVE   LAST SCHEDULE   AGE
