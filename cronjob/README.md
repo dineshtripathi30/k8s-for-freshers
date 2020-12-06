@@ -16,3 +16,10 @@ This is an example of how to create cronjob using imperative command.
   ```sh
   kubectl create -f cronjob.yml
   ```
+  * cronjob output
+  ```sh
+kubectl get  cj
+
+NAME      SCHEDULE      SUSPEND   ACTIVE   LAST SCHEDULE   AGE
+counter   */1 * * * *   False     0        <none>          5s
+  ```
