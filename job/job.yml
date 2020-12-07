@@ -2,7 +2,8 @@ apiVersion: batch/v1
 kind: Job
 metadata:
   creationTimestamp: null
-  name: addnumber
+  name: demo-job
+  namespace: demospace
 spec:
   template:
     metadata:
@@ -10,7 +11,7 @@ spec:
     spec:
       containers:
       - image: busybox
-        name: addnumber
+        name: demo-job
         resources: {}
       restartPolicy: Never
 status: {}
