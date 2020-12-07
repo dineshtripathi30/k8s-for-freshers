@@ -16,11 +16,11 @@ This is an example of how to create deployment using imperative command.
   ```sh
   kubectl create deploy my-deploy --image nginx --replicas 1 --namespace demospace --dry-run=client -o yaml > my-deploy.yml
   ```
-* Create cronjob
+* Create deployment
   ```sh
   kubectl create -f my-deploy.yml
   ```
-* cronjob output
+* deployment output
   ```sh
   kubectl get  deploy -n demospace
   NAME        READY   UP-TO-DATE   AVAILABLE   AGE
