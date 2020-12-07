@@ -1,10 +1,11 @@
-apiVersion: apps/v1
+piVersion: apps/v1
 kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
     app: my-deploy
   name: my-deploy
+  namespace: demospace
 spec:
   replicas: 1
   selector:
