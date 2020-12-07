@@ -2,27 +2,27 @@
 
 By: Dinesh Tripathi  (This project is still under development)
 
-## Getting Started with cronjob
-### What is cronjob?
+## Getting Started with persistent  volume
+* This is an example of how to create persistent volume using yaml file. 
+* At the moment, creating persistent  volume using imperative command is not supported.
+  
+### What is persistent volume  in kubernetes?
 <todo>
 
 ### Lab Prerequisites
 
-This is an example of how to create cronjob using imperative command.
 *  Minikube cluster is up and running
   
 ### Lab Steps
-* This command will generate a sample cronjob file, Modify it according to your  cronjob requirement
+* This command will create a hostpath based persistent volume using yaml file. Modify the parameters according it according to your requirement
+ 
+* Create persistent volume
   ```sh
-  kubectl create cj counter --image busybox --schedule "*/1 * * * *" --dry-run=client  -o  yaml > cronjob.yml
+  kubectl create -f hostpath-pv.yml
   ```
-* Create cronjob
+* persistent volume output
   ```sh
-  kubectl create -f cronjob.yml
-  ```
-* cronjob output
-  ```sh
-  kubectl get  cj
-  NAME      SCHEDULE      SUSPEND   ACTIVE   LAST SCHEDULE   AGE
-  counter   */1 * * * *   False     0        <none>          5s
+  kubectl  get  pv
+  NAME      CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS      CLAIM   STORAGECLASS   REASON   AGE
+  demo-pv   1Gi        RWO            Retain           Available                        
   ```
