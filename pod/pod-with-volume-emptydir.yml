@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: busybox
+  labels:
+    app: busybox
+spec:
+  containers:
+  - name: busybox
+    image: busybox
+    # start - This section mount the volume to container 
+    volumeMounts:
+      - name: emptydirtest
+        mountPath: /mnt/vol
+    # end
+  restartPolicy: Never
+  # start - This section mount the volume to pod 
+  volumes:
+    - name: emptydirtest
+      emptyDir: {}
+  # end
