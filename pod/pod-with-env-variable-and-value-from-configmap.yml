@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  labels:
+    app: nginx
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    env:
+    - name: NGINX_COLOR
+      valueFrom:
+        configMapKeyRef:
+          name: demo-config-map
+          key: app-color
+  restartPolicy: Never
