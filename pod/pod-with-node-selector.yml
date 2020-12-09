@@ -1,0 +1,19 @@
+# Pre-req -> label  node first 
+# example command "kubectl label node minikube run=alpinepod"
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: alpine-pod
+  labels:
+    app: node
+spec:
+  containers:
+  - name: container1
+    image: alpine
+
+  restartPolicy: Never
+  # start - This section defines the node selector
+  nodeSelector:
+    run: alpinepod
+  # end
