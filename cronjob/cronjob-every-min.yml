@@ -1,0 +1,26 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  creationTimestamp: null
+  name: cronjob-every-min
+spec:
+  jobTemplate:
+    metadata:
+      creationTimestamp: null
+      name: cronjob-every-min
+    spec:
+      template:
+        metadata:
+          creationTimestamp: null
+        spec:
+          containers:
+          - command:
+            - /bin/sh
+            - -c
+            - date;echo hello
+            image: busybox
+            name: cronjob-every-min
+            resources: {}
+          restartPolicy: OnFailure
+  schedule: '*/1 * * * *'
+status: {}

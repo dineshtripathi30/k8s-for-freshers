@@ -3,15 +3,19 @@ kind: Pod
 metadata:
   creationTimestamp: null
   labels:
-    run: nginx
-  name: nginx
+    run: redis
+  name: redis
 spec:
   containers:
-  - image: nginx
-    name: nginx
+  - image: redis
+    name: redis
     resources: {}
+    volumeMounts:
+    - name: vol1
+      mountPath: /var/disk
   dnsPolicy: ClusterFirst
   restartPolicy: Never
-  nodeSelector:
-   nodeName: nginx
+  volumes:
+  - name: vol1
+    emptyDir: {}
 status: {}

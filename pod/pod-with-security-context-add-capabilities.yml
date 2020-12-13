@@ -10,8 +10,9 @@ spec:
   - image: nginx
     name: nginx
     resources: {}
+    securityContext:
+     capabilities:
+       add: ["SYS_TIME", "NET_ADMIN"]
   dnsPolicy: ClusterFirst
   restartPolicy: Never
-  nodeSelector:
-   nodeName: nginx
 status: {}

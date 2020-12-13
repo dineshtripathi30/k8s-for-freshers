@@ -10,8 +10,13 @@ spec:
   - image: nginx
     name: nginx
     resources: {}
+    volumeMounts:
+    - name: nginx-volume
+      mountPath: /etc/cfg
   dnsPolicy: ClusterFirst
-  restartPolicy: Never
-  nodeSelector:
-   nodeName: nginx
+  restartPolicy: Always
+  volumes:
+  - name: nginx-volume 
+    configMap:
+      name: cfgvolume
 status: {}

@@ -7,11 +7,15 @@ metadata:
   name: nginx
 spec:
   containers:
-  - image: nginx
+  - args:
+    - /bin/sh
+    - -c
+    - ls
+    image: nginx
     name: nginx
+    ports:
+    - containerPort: 80
     resources: {}
   dnsPolicy: ClusterFirst
   restartPolicy: Never
-  nodeSelector:
-   nodeName: nginx
 status: {}

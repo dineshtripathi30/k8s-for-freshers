@@ -5,13 +5,12 @@ metadata:
   labels:
     run: nginx
   name: nginx
+  namespace: default
 spec:
   containers:
   - image: nginx
     name: nginx
     resources: {}
   dnsPolicy: ClusterFirst
-  restartPolicy: Never
-  nodeSelector:
-   nodeName: nginx
+  restartPolicy: Always
 status: {}
