@@ -18,7 +18,6 @@
       when: "not minikube_status.stdout or 'Running' not in minikube_status.stdout"
 
   tasks:
-    # Build the hello-go Docker image inside Minikube's environment.
 
     # Create Kubernetes resources to run Hello Go.
     - name: Create a Deployment for Hello Go.
@@ -64,8 +63,7 @@
               app: hello-go
 
   post_tasks:
-    - name: Expose Hello Go on the host via Minikube.
-      command: kubectl get service hello-go
+    - name: Delete the deployment.
+      command: kubectl delete deploy hello-go
       changed_when: false
-      register: minikube_service
 
