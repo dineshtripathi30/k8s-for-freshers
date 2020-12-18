@@ -29,3 +29,22 @@ spec:
         name: hello-app
         resources: {}
 status: {}
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: ingress-test
+    version: v1
+  name: web1
+  namespace: default
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: ingress-test
+    version: v1
+  type: ClusterIP

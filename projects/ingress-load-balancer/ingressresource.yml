@@ -1,0 +1,26 @@
+# Ingress resource without specific  host
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: app-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+  - host: hello-world.ingress
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+           name: web1
+           port: 
+            number: 80
+      - path: /v2
+        pathType: Prefix
+        backend:
+         service:
+          name: web2
+          port:
+            number: 8080
