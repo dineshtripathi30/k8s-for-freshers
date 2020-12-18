@@ -6,10 +6,10 @@
 
 # Imperative Commands
 * Create pod 'demopod' with 'ngnix' image
-  ```sh
-  k run demopod --image nginx
-  ```
-
-```sh
-k run nginx --image nginx --restart Never --requests "cpu=.2,memory=50Mi" --limits "cpu=.4,memory=100Mi" --dry-run=client -o yaml --env=a=b --labels=b=c -- /bin/sh -c "sleep 3600"
-```
+    ```sh
+    k run demopod --image nginx
+    ```
+* Create po with  request, limits, command, env and label
+    ```sh
+    k run nginx --image nginx --restart Never --requests "cpu=.2,memory=50Mi" --limits "cpu=.4,memory=100Mi" --dry-run=client -o yaml --env=a=b --labels=b=c -- /bin/sh -c "sleep 3600"
+    ```
