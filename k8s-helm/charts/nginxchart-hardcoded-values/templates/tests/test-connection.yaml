@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "nginxchart-hardcoded-values.fullname" . }}-test-connection"
+  labels:
+    {{- include "nginxchart-hardcoded-values.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": test
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['{{ include "nginxchart-hardcoded-values.fullname" . }}:{{ .Values.service.port }}']
+  restartPolicy: Never
