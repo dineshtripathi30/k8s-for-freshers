@@ -1,0 +1,26 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  creationTimestamp: null
+  name: demojob
+spec:
+  jobTemplate:
+    metadata:
+      creationTimestamp: null
+      name: demojob
+    spec:
+      template:
+        metadata:
+          creationTimestamp: null
+        spec:
+          containers:
+          - command:
+            - /bin/sh
+            - -c
+            - echo Hello India
+            image: nginx
+            name: demojob
+            resources: {}
+          restartPolicy: OnFailure
+  schedule: '* * * * *'
+status: {}
