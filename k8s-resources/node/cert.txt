@@ -1,0 +1,7 @@
+cert.txt
+Kubernetes certificate
+openssl genrsa -out ca.key 2048 # Generate key 
+openssl req -new -key ca.key -subj "/CN=k8s-ca" -out ca.csr # Generate csr
+openssl x509 -req -in ca.csr -signkey ca.key -out ca.crt # sign certificate 
+
+
