@@ -40,12 +40,12 @@ By: Dinesh Tripathi  (This project is still under development)
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[[Kubernetes for Students]()]
+[[Kubernetes for Beginners]()]
 
-Learning new technologies is really important for  collegge studnets in this world where technology  changes are happening very very fast. This project  is dedicated to  those  studenst  who want to learn by  practise. 
+Learning new technologies is really important for studnets/professionals in this world where technology changes are happening very very fast. This project is dedicated to  those who want to learn by practise. 
 
 Here's why:
-* You should focus on learning new  technologies which help you  to get  the  job.
+* You should focus on learning new technologies which help you to get  the  job.
 * You should learn  by   practise.
 
 
