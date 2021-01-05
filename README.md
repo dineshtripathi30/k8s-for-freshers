@@ -1,4 +1,4 @@
-# Kubernetes Learning for College Students
+# Kubernetes Learning for Beginners
 
 By: Dinesh Tripathi  (This project is still under development)
 
