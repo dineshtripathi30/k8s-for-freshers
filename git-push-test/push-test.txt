@@ -1,2 +1,10 @@
-token : 6209bb327c18674b3df28b0e4fab439abe61588b 
+token : 6209bb327c18674b3df28b0e4fab439abe61588b
+Application deployment steps:
+
+Package a sample web application into a Docker image.
+Upload the Docker image to Container Registry.
+Deploy the sample app to the cluster.
+Manage autoscaling for the deployment.
+Expose the sample app to the internet.
+Deploy a new version of the sample app.
 
