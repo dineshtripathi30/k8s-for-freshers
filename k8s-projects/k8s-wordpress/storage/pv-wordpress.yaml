@@ -12,7 +12,5 @@ spec:
     storage: 1Gi
   accessModes:
     - ReadWriteMany
-  nfs:
-    server: nfs01
-    # Exported path of your NFS server
+  hostPath:
     path: "/html"
