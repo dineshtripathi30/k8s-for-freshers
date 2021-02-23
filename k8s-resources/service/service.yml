@@ -1,5 +1,6 @@
-kind: Service
+
 apiVersion: v1
+kind: Service
 metadata:
   name: nginx
 spec:
