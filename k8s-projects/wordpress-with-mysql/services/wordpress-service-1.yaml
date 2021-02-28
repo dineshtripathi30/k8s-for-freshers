@@ -1,0 +1,12 @@
+#Create wordpress-mysql service
+apiVersion: v1
+kind: Service
+metadata:
+  name: wordpress-mysql
+  labels:
+    app: blog
+spec:
+  ports:
+  - port: 3306
+  selector:
+    db: mysql

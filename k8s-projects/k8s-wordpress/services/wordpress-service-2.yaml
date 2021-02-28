@@ -1,0 +1,15 @@
+#create wordpress service
+apiVersion: v1
+kind: Service
+metadata:
+  name: wordpress
+  labels:
+    app: blog
+spec:
+  type: NodePort
+  ports:
+  - port: 80
+    nodePort: 30004
+    targetPort: 80
+  selector:
+    name: wordpress
