@@ -1,8 +1,16 @@
--
-  name: Execute a command on localhost
-  hosts: localhost
-  tasks:
-    -
-      name: Create a new file on localhost
-      command: touch names
+--- 
+ - name: Execute a command on localhost
+   hosts: localhost
+   gather_facts: false
+   tasks:
+   - name: Create a new file on localhost
+     file:
+        path: "/Users/dinetrip/Box Sync/dinesh/CKAD/CKAD/examples/k8s-ansible/ansible-basic/tmp.txt"
+        owner: dinetrip
+        state: touch
+   - name: removing the create file
+     file:
+      path: "/Users/dinetrip/Box Sync/dinesh/CKAD/CKAD/examples/k8s-ansible/ansible-basic/tmp.txt"
+      state: absent
+
 
