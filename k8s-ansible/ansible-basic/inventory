@@ -1,1 +1,8 @@
+[local]
 localhost
+
+[bootstrap]
+localhost
+
+[bootstrap:vars]
+hit=trial

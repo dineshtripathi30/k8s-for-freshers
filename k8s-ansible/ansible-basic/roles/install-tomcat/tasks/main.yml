@@ -1,2 +1,6 @@
 ---
 # tasks file for install-tomcat
+- name: run a tkg command
+    shell: "tkg --help"
+    register: shell_output
+- debug: var=shell_output

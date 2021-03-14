@@ -1,0 +1,6 @@
+--- 
+ - name: Execute a command on bootstrap node
+   hosts: bootstrap
+   gather_facts: false
+   roles:
+    - mgmtcluster-precheck
