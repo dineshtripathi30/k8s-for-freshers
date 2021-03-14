@@ -1,6 +1,6 @@
 # Kubernetes Learning for Beginners
 
-By: Dinesh Tripathi  (This project is still under development)
+By: Dinesh Tripathi
 
   <p align="center">
     <br />
