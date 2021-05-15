@@ -1,0 +1,4 @@
+domain: example.com
+layout: ansible.sdk.operatorframework.io/v1
+projectName: tomcat-operator
+version: 3-alpha

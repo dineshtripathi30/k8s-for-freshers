@@ -1,0 +1,7 @@
+apiVersion: store.example.com/v1beta1
+kind: Storefront
+metadata:
+  name: storefront-sample
+spec:
+  # Add fields here
+  foo: bar

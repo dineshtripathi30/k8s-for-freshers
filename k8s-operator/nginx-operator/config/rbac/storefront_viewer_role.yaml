@@ -1,0 +1,20 @@
+# permissions for end users to view storefronts.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: storefront-viewer-role
+rules:
+- apiGroups:
+  - store.example.com
+  resources:
+  - storefronts
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - store.example.com
+  resources:
+  - storefronts/status
+  verbs:
+  - get

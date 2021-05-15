@@ -1,0 +1,24 @@
+# permissions for end users to edit storefronts.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: storefront-editor-role
+rules:
+- apiGroups:
+  - store.example.com
+  resources:
+  - storefronts
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - store.example.com
+  resources:
+  - storefronts/status
+  verbs:
+  - get

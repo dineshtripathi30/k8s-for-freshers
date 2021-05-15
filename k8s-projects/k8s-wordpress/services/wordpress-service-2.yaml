@@ -9,7 +9,7 @@ spec:
   type: NodePort
   ports:
   - port: 80
-    nodePort: 30004
+    nodePort: 30009
     targetPort: 80
   selector:
     name: wordpress

@@ -1,0 +1,11 @@
+domain: example.com
+layout: go.kubebuilder.io/v2
+projectName: nginx-operator
+repo: example.com/m/v2
+resources:
+- group: store
+  kind: Storefront
+  version: v1beta1
+version: 3-alpha
+plugins:
+  go.sdk.operatorframework.io/v2-alpha: {}
