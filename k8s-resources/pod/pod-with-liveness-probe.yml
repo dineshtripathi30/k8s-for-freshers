@@ -9,6 +9,9 @@ spec:
   containers:
   - image: nginx
     name: nginx
+    command:
+    - sleep
+    - "5000"
     ports:
     - containerPort: 80
     resources: {}
