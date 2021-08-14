@@ -40,13 +40,13 @@ By: Dinesh Tripathi
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[[Kubernetes for Students]()]
+[[Kubernetes for Freshers]()]
 
-Learning new technologies is really important for  collegge studnets in this world where technology  changes are happening very very fast. This project  is dedicated to  those  studenst  who want to learn by  practise. 
+Learning new technologies is really important for  college students in this world where technology  changes are happening very very fast. This project  is dedicated to  those  studenst  who want to learn by k8s by practise. 
 
 Here's why:
 * You should focus on learning new  technologies which help you  to get  the  job.
-* You should learn  by   practise.
+* You should learn  by  practise.
 
 
 ### Built With
@@ -69,15 +69,18 @@ This is an example of how to list things you need to use the software and how to
   Linux Machine
   ```
 
+
 ### Installation
 
-1. Get a package  from [https://example.com](https://example.com)
+1. Get a package  from [https://minikube.sigs.k8s.io/docs/start/](https://minikube.sigs.k8s.io/docs/start/)
 2. Clone the repo
-   ```sh
+   ```sh  
    minikube start
    ```
 
-
+### Katakoda
+In case you do not have resources to install minikube, use katakoda playgrounds lab and practise the same.
+You can access katakoda by using [https://www.katacoda.com/](https://www.katacoda.com/)
 
 
 <!-- USAGE EXAMPLES -->
@@ -85,15 +88,12 @@ This is an example of how to list things you need to use the software and how to
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
 
 
 
 ## Contact
 
-[@dinesh30](https://twitter.com/dinesh30) - dinesh.tripathi30@gmail.com
+Twitter: [@dinesh30](https://twitter.com/dinesh30)  Email: dinesh.tripathi30@gmail.com
 
 
 
