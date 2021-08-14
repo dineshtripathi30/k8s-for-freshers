@@ -1,36 +1,103 @@
-## Welcome to GitHub Pages
+## Welcome K8S Learning
 
-You can use the [editor on GitHub](https://github.com/dineshtripathi30/k8s-for-freshers/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
+  <p align="center">
+    <br />
+    <a href=""><strong></strong></a>
+    <br />
+    <br />
+    <a href="##">View Demo</a>
+    ·
+    <a href="###">Report Bug</a>
+    ·
+    <a href="###">Request Demo or a Class</a>
+  </p>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-1. Numbered
-2. List
+[[Kubernetes for Freshers]()]
 
-**Bold** and _Italic_ and `Code` text
+Learning new technologies is really important for  college students in this world where technology  changes are happening very very fast. This project  is dedicated to  those  studenst  who want to learn by k8s by practise. 
 
-[Link](url) and ![Image](src)
-```
+Here's why:
+* You should focus on learning new  technologies which help you  to get  the  job.
+* You should learn  by  practise.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+### Built With
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/dineshtripathi30/k8s-for-freshers/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+This section lists the required tools used in this demo  series.
+* [minikube](https://minikube.sigs.k8s.io/docs/)
+
+
+
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+
+### Prerequisites
+
+This is an example of how to list things you need to use the software and how to install them.
+* minikube
+  ```sh
+  Linux Machine
+  ```
+
+### Installation
+
+1. Get a package  from [https://minikube.sigs.k8s.io/docs/start/](https://minikube.sigs.k8s.io/docs/start/)
+2. Clone the repo
+   ```sh  
+   minikube start
+   ```
+
+### Katakoda
+In case you do not have resources to install minikube, use katakoda playgrounds lab and practise the same.
+You can access katakoda by using [https://www.katacoda.com/](https://www.katacoda.com/)
+
+
+
+<!-- USAGE EXAMPLES -->
+## Usage
+
+Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+
+
+
+
+## Contact
+
+Twitter: [@dinesh30](https://twitter.com/dinesh30)  Email: dinesh.tripathi30@gmail.com
+
+
+
+
+
+
 
 ### Support or Contact
 
