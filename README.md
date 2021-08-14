@@ -1,46 +1,5 @@
 # Kubernetes Learning for Beginners
 
-By: Dinesh Tripathi
-
-  <p align="center">
-    <br />
-    <a href=""><strong></strong></a>
-    <br />
-    <br />
-    <a href="##">View Demo</a>
-    ·
-    <a href="###">Report Bug</a>
-    ·
-    <a href="###">Request Demo or a Class</a>
-  </p>
-
-
-
-<!-- TABLE OF CONTENTS -->
-<details open="open">
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ol>
-</details>
-
-
-
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-[[Kubernetes for Freshers]()]
 
 Learning new technologies is really important for  college students in this world where technology  changes are happening very very fast. This project  is dedicated to  those  studenst  who want to learn by k8s by practise. 
 
