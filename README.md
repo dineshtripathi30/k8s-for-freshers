@@ -39,7 +39,7 @@ This is an example of how to list things you need to use the software and how to
 
 ### Katakoda
 In case you do not have resources to install minikube, use katakoda playgrounds lab and practise the same.
-You can access katakoda by using [https://www.katacoda.com/](https://www.katacoda.com/)
+You can access katakoda by using [https://www.katacoda.com/courses/kubernetes/playground](https://www.katacoda.com/courses/kubernetes/playground)
 
 
 <!-- USAGE EXAMPLES -->
