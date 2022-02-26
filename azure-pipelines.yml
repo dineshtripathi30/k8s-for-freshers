@@ -18,9 +18,13 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
-- task: KubernetesManifest@0
+
+- task: Kubernetes@1
   inputs:
-    action: 'deploy'
-    kubernetesServiceConnection: 'tkgazure'
+    connectionType: 'Kubernetes Service Connection'
+    kubernetesServiceEndpoint: 'tkgazure'
     namespace: 'default'
-    manifests: 'https://raw.githubusercontent.com/dineshtripathi30/k8s-for-freshers/master/k8s-resources/pod/pod-with-env-var.yml'
+    command: 'apply'
+    arguments: '-f https://raw.githubusercontent.com/dineshtripathi30/k8s-for-freshers/master/k8s-resources/pod/pod-with-env-var.yml'
+    secretType: 'dockerRegistry'
+    containerRegistryType: 'Azure Container Registry''
