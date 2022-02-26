@@ -27,4 +27,4 @@ steps:
     command: 'apply'
     arguments: '-f https://raw.githubusercontent.com/dineshtripathi30/k8s-for-freshers/master/k8s-resources/pod/pod-with-env-var.yml'
     secretType: 'dockerRegistry'
-    containerRegistryType: 'Azure Container Registry''
+    containerRegistryType: 'Azure Container Registry'
